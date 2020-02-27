@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "image.rootPath",
+      "type": "java.lang.String",
+      "description": "Description for image.rootPath."
+    },
+    {
+      "name": "image.interface",
+      "type": "java.lang.String",
+      "description": "Description for image.interface."
+    }
+  ] }
