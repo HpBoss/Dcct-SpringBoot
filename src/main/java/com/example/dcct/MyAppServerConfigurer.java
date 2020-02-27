@@ -1,11 +1,16 @@
 package com.example.dcct;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 @Configuration
-public class MyWebMvcConfigurerAdapter implements WebMvcConfigurer {
+public class MyAppServerConfigurer implements WebMvcConfigurer {
 
     //由于WebMvcConfigurerAdapter已经被启用，此时改成实现WebMvcConfigurer接口，不再继承WebMvcConfigurerAdapter抽象类
     @Value("${image.rootPath}")
